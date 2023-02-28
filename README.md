@@ -28,5 +28,15 @@ To install and run the app, follow these steps:
 4. Run npm start to start the development server.
 5. Open http://localhost:3000 to view the app in your browser.
 
+## Contributing
+Contributions are welcome! If you would like to contribute, please follow these steps:
+
+1. Fork the repository.
+2. Create a new branch for your feature.
+3. Make your changes and commit them with clear commit messages.
+4. Push your changes to your forked repository.
+5. Submit a pull request to the main repository.
+
+
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more information.
