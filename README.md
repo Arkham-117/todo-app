@@ -4,21 +4,29 @@ This is a simple todo app that allows you to keep track of your tasks and mark t
 
 ## Usage
 
-To use the app, simply open the `index.html` file in your web browser. You will see a list of your current tasks, and can add new tasks using the input field at the top of the page. To mark a task as complete, click the checkbox next to it.
+To use the app, simply add tasks using the input field at the bottom of the page. You can edit or delete tasks by clicking on the corresponding icons next to each task.
 
 ## Features
 
-- Add new tasks
-- Mark tasks as complete
-- Edit existing tasks
-- Delete tasks
-- Persist data using local storage
+- Add new tasks with a description and completion status
+- Mark tasks as complete or incomplete
+- Unique ID generated for each task
+- Delete tasks individually or delete all tasks at once
+
+## Technologies Used
+The app was built using the following technologies:
+- React
+- CSS
+- HTML
 
 ## Installation
+To install and run the app, follow these steps:
 
-To install the app, simply clone the repository and open the `index.html` file in your web browser:
+1. Clone the repository or download the source code.
+2. Navigate to the project directory in your terminal.
+3. Run npm install to install the necessary dependencies.
+4. Run npm start to start the development server.
+5. Open http://localhost:3000 to view the app in your browser.
 
-```bash
-git clone https://github.com/your-username/todo-app.git
-cd todo-app
-open index.html
+## License
+This project is licensed under the MIT License. See the LICENSE file for more information.
