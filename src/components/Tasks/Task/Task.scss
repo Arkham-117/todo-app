@@ -1,0 +1,66 @@
+.task-container {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  
+    h3 {
+        color: #333;
+        font-size: 18px;
+        margin-bottom: 5px;
+      }
+  
+    .task-header {
+      font-size: 16px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 5px;
+    }
+  
+    .task-status {
+      font-size: 16px;
+      margin-bottom: 10px;
+  
+      &.completed {
+        color: green;
+      }
+  
+      &.open {
+        color: red;
+      }
+    }
+  
+    .task-buttons {
+      margin-top: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .task-button-text {
+      margin-left: 5px;
+    }
+  
+    .task-icon {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 24px;
+      color: #777;
+      transition: all 0.2s ease-in-out;
+    }
+  
+    .task-icon--completed {
+      color: green;
+    }
+  
+    .task-icon--remove {
+      color: red;
+    }
+  
+    .task-icon:hover {
+      transform: scale(1.2);
+      color: #333;
+      cursor: pointer;
+    }
+  }
+  
