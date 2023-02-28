@@ -1,6 +1,6 @@
 # Todo App
 
-This is a simple todo app that allows you to keep track of your tasks and mark them as complete as you go. It is built with HTML, CSS, and JavaScript, and uses local storage to persist your data.
+This is a simple todo app that allows you to keep track of your tasks and mark them as complete as you go. It is a React app built with HTML, CSS, Sass, and JavaScript, and uses local storage to persist your data.
 
 ## Usage
 
