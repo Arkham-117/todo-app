@@ -1,4 +1,6 @@
 import { useState } from "react";
+import "./Form.scss";
+import { RiAddLine } from 'react-icons/ri';
 
 function Form({ onAddTask }) {
   const [description, setDescription] = useState('');
@@ -25,40 +27,50 @@ function Form({ onAddTask }) {
   }
 
   return (
-    <form onSubmit={handleFormSubmission}>
-      <h2>Add a new task:</h2>
+    <div className="form-container">
+      <form onSubmit={handleFormSubmission}>
+        <h2>Add a new task:</h2>
 
-      {/* Conditional render of the error message */}
-      {errorMessage !== '' && (
-        <div>{errorMessage}</div>
-      )}
+        {/* Conditional render of the error message */}
+        {errorMessage !== '' && (
+          <div className="form-error-message">{errorMessage}</div>
+        )}
 
-      {/* Description Field */}
-      <label>
-        Description:
-        <input
-          type='text'
-          maxLength={150}
-          value={description}
-          onChange={(event) => setDescription(event.target.value)}
-        />
-      </label>
+        {/* Description Field */}
+        <div className="form-field">
+          <label className="form-label" htmlFor="description-input">
+            Description:
+          </label>
+          <input
+            id="description-input"
+            type="text"
+            maxLength={150}
+            className="form-input"
+            value={description}
+            onChange={(event) => setDescription(event.target.value)}
+          />
+        </div>
 
-      {/* Status Field */}
-      <label>
-        Status:
-        <select
-          value={status}
-          onChange={(event) => setStatus(event.target.value)}
-        >
-          <option value={false}>Open</option>
-          <option value={true}>Completed</option>
-        </select>
-      </label>
+        {/* Status Field */}
+        <div className="form-field">
+          <label className="form-label" htmlFor="status-select">
+            Status:
+          </label>
+          <select
+            id="status-select"
+            className="form-select"
+            value={status}
+            onChange={(event) => setStatus(event.target.value)}
+          >
+            <option value={false}>Open</option>
+            <option value={true}>Completed</option>
+          </select>
+        </div>
 
-      {/* Submission Button */}
-      <button>Add</button>
-    </form>
+        {/* Submission Button */}
+        <button className="form-submit-button"><RiAddLine size={15} />Add</button>
+      </form>
+    </div>
   );
 }
 

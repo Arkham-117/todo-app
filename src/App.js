@@ -67,6 +67,10 @@ function App() {
     <>
       <Header />
 
+      <Form
+        onAddTask={handleAddTask}
+      />
+
       <Tasks
         tasks={tasks}
         onStatusChange={handleStatusChange}
@@ -74,9 +78,7 @@ function App() {
         onClearTasks={handleClearTasks}
       />
 
-      <Form
-        onAddTask={handleAddTask}
-      />
+      
     </>
   );
 }

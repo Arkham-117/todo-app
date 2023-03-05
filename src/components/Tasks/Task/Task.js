@@ -1,4 +1,4 @@
-import { RiCheckboxCircleFill, RiCloseCircleFill } from 'react-icons/ri';
+import { RiCheckboxCircleFill, RiCloseCircleFill, RiCheckboxBlankCircleLine } from 'react-icons/ri';
 import './Task.scss';
 
 function Task(props) {
@@ -22,16 +22,17 @@ function Task(props) {
         {props.task.done ? 'Completed' : 'Open'}
       </div>
       <div className="task-buttons">
-        <span onClick={handleStatusClick}>
-          {props.task.done
-            ? <RiCheckboxCircleFill className="task-icon task-icon--completed" />
-            : <RiCheckboxCircleFill className="task-icon" />
-          }
-          <span className="task-button-text">Change Status</span>
-        </span>
+      <span onClick={handleStatusClick}>
+        {props.task.done
+          ? <RiCheckboxCircleFill className="task-icon task-icon--completed" />
+          : <RiCheckboxBlankCircleLine className="task-icon" />
+        }
+      <span className="task-button-text">Change Status</span>
+    </span>
+
         <span onClick={handleRemoveClick}>
           <RiCloseCircleFill className="task-icon task-icon--remove" />
-          <span className="task-button-text">Remove Task</span>
+          <span className="task-button-text task-button-text--remove">Remove Task</span>
         </span>
       </div>
     </div>

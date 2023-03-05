@@ -1,0 +1,46 @@
+.tasks-container {
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-left: 15px;
+  }
+  
+  .clear-tasks-btn {
+    background-color: #ff5858;
+    border: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    cursor: pointer;
+  }
+  
+  .clear-tasks-btn:hover {
+    background-color: #ff4141;
+  }
+  
+  .clear-tasks-btn-icon {
+    margin-right: 10px;
+    font-size: 1.2rem;
+  }
+  
+  @media (max-width: 768px) {
+    .tasks-container {
+      max-width: 95%; 
+      margin-left: 0;
+      margin-right: 0;
+      border-radius: 0;
+      border-left: none;
+      border-right: none;
+      padding-left: 10;
+      padding-right: 10;
+    }
+  }
+  
