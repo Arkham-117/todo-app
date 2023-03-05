@@ -15,9 +15,11 @@ To use the app, simply add tasks using the input field at the bottom of the page
 
 ## Technologies Used
 The app was built using the following technologies:
+- JavaScript
 - React
 - CSS
 - HTML
+- Sass
 
 ## Installation
 To install and run the app, follow these steps:
